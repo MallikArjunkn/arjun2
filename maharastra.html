@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maharastra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style type="text/css">
+  body{
+    font-family: 'Montserrat', sans-serif;
+  }
+  #error{
+    color:red;
+  }
+</style>
+
+</head>
+<body ng-app=" ">
+
+<div  style=" margin-top:25px" class="container">
+  <div class="row">
+    <div class="col-md-4">
+    <form>
+    <div class="form-group" ng-model=" property">
+      <label >Property city</label>
+      <select  class="form-control">
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Nagpur</option>
+        <option>Thane</option>
+      </select>
+      <span id="error">Error</span>
+      
+    </div>
+    </form>
+    </div>
+
+
+    <div class="col-md-4">
+    <form>
+    <div class="form-group">
+      <label >tenant city(Current Staying)</label>
+      <select  class="form-control" >
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Nagpur</option>
+        <option>Thane</option>
+      </select>
+      <span id="error">Error</span>
+    </div>
+    </form>
+
+    </div>
+  
+    <div class="col-md-4">
+    <form>
+    <div class="form-group">
+      <label  >Landlord city(Current Staying)</label>
+      <select  class="form-control" >
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Nagpur</option>
+        <option>Thane</option>
+      </select>
+      <span id="error">Error</span>
+    </div>
+    </form>
+
+    
+  
+      </div>
+     
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+         <form>
+    <div class="form-group">
+      <label >Proprty in Area</label>
+      <select class="form-control">
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Nagpur</option>
+        <option>Thane</option>
+      </select>
+      <span id="error">Error</span>
+    </div>
+    </form>
+     <div class="form-group">
+      <label >Property Type</label>
+      <select class="form-control">
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Nagpur</option>
+        <option>Thane</option>
+      </select>
+      <span id="error">Error</span>
+    </div>
+    </form>
+   <div class="form-group">
+  <label for="usr">License Period in months</label>
+  <input type="text" class="form-control" name="license">
+  <span id="error">error</span>
+</div>
+    </form>
+   <div class="form-group">
+  <label for="usr">Rent per month</label>
+  <input type="text" class="form-control" name="rent per month">
+  <span id="error">error</span>
+</div>
+    </form>
+    <div class="form-group">
+  <label for="usr">Non refundable premium (Optional)</label>
+  <input type="text" class="form-control" name="non-refundable">
+  <span id="error">error</span>
+</div>
+    </form>
+    <div class="form-group">
+  <label for="usr">Refundable deposit</label>
+  <input type="text" class="form-control" name="refundable">
+  <span id="error">error</span>
+
+</div>
+    </form>
+
+      </div>
+      <div class="col-md-8">
+
+<div style="background-color:#007BFF" class="shadow-sm p-3 mb-5 bg-white rounded">
+  <h5>Registration Summary</h5>
+  <div style="margin-top:20px">Total Charges</div>
+  <div style="margin-top:20px">Hide estimate charges <button type="button"  data-toggle="collapse" data-target="#demo"> <span class="glyphicon glyphicon-triangle-top"></span></button></p>
+  <div id="demo">
+    <div style="margin-top:20px">registration fee(to govt)</div>
+    <div style="margin-top:20px">stamp duty(to govt for 24 months)</div>
+    <div style="margin-top:20px">Authorised service provider charges(+18% GST)</div>
+
+
+</div></div>
+<div class="shadow-sm p-3 mb-5 rounded" style=" margin-top:20px;background-color:rgba(40, 167, 69, 0.06);">
+      <div style="color:#28A745 ;margin-top:-15px;float:left">PAYMATRIX400(Coupon) </div>
+      <div style="color:#28A745 ;margin-top:-15px;float:right">-400</div>
+      
+    </div>
+    <div><hr style="margin-top: -30px">
+    <div style="font-size:20px;font-weight:bold;color:rgb(0,120,239);">Final amount</div>
+</div>
+    
+
+
+      </div>
+      <div style="text-align: center;"><div style="font-size:20px">PAY ONLY <span></span>NOW TO GET STARTED</div>
+        <div style="font-size: 12px;font-weight:bold">In case of partial payment extra charges of ₹100 will be applicable.</div>
+        <div style="font-size: 12px;font-weight:bold">Pay only the govt fees now & rest later.</div></div>
+        <div style="text-align: center">
+        <button type="button" class="btn-primary" style="margin-top:30px;font-size:24px;border:0;border-radius:5px;color:white;width:251.41px;height:48px">Start agreement</button></div>
+
+      </div></div>
+
+      <div style="margin-top: 30px"><hr></div>
+      <div>
+        <p><strong># Facilitation fees </strong>- Only one visit is included in the above estimate. Extra visit will be charged at ₹ 500 per visit 
+  </p>
+  <p><strong># Witness Signatures</strong> - Witnesses with Aadhaar and Pan Card are required for the process of registration, and can be arranged by the visiting executive. A fee of Rs.100 per witness may be charged if they are to be arranged by the visiting executive . </p>
+  <p><strong># Delivery Fees</strong> - E-copy of the registered and approved agreement is shared to the tenant/landlord’s email id within 5-7 working days of the biometrics submission.In case the hard copy is required, a charge of RS.200/- shall be levied</p>
+      </div>
+
+  
+</div>
+
+</body>
+</html>
